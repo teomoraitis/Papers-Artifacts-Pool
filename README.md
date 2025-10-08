@@ -18,7 +18,7 @@ A collection of studied and reproduced research papers, including summaries, pre
 
 ---
 
-### Others:
+### [Others](./others):
 
 #### Architectural Support for Optimizing Huge Page Selection Within the OS
 - Original Paper: []()
