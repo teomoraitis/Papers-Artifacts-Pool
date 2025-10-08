@@ -3,14 +3,14 @@ A collection of studied and reproduced research papers, including summaries, pre
 
 ---
 
-### [PALLOC](./PALLOC)
+### [PALLOC](./PALLOC): RAM Bank-Aware Memory Allocator for Performance Isolation on Multicore Platforms
 - Original Paper: [PALLOC (RTAS 2014)](https://cs-people.bu.edu/rmancuso/files/papers/palloc-rtas2014.pdf)
 - Original Artifact: [heechul/palloc](https://github.com/heechul/palloc)
 - Artifact Reproduction: [ReproductionSteps.md](./PALLOC/ReproductionSteps.md)
 
 ---
 
-### [EXTMEM](./EXTMEM)
+### [EXTMEM](./EXTMEM): Enabling Application-Aware Virtual Memory Management for Data-Intensive Applications
 - Original Paper: [ExtMem (USENIX ATC 2024)](https://www.usenix.org/system/files/atc24-jalalian.pdf)
 - Original Artifact: [SepehrDV2/ExtMem](https://github.com/SepehrDV2/ExtMem)
 - Paper Presentation: [EXTMEM Paper Presentation.pdf](./EXTMEM/EXTMEM%20Paper%20Presentation.pdf)
