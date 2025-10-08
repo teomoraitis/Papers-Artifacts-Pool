@@ -14,6 +14,6 @@ A collection of studied and reproduced research papers, including summaries, pre
 ### [PALLOC](./PALLOC)
 - **Original Paper:** [PALLOC: DRAM Bank-Aware Memory Allocator for Performance Isolation on Multicore Platforms (RTAS 2014)](https://cs-people.bu.edu/rmancuso/files/papers/palloc-rtas2014.pdf)
 - **Original Artifact Repository:** [heechul/palloc](https://github.com/heechul/palloc)
-- [ReproductionSteps.md](./PALLOC/ReproductionSteps.md) —  Steps and notes from running the artifact.
+- [ReproductionSteps.md](./PALLOC/ReproductionSteps.md) —  Steps and notes for running the artifact.
 
 ---
