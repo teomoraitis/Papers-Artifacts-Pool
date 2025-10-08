@@ -1,0 +1,16 @@
+Paper Summary by Theodoros Moraitis: 
+**Last-Level Cache Side-Channel Attacks Are Feasible in the Modern Public Cloud [ASPLOS'24]** (Security)
+
+Last-level cache side-channel attacks, previously thought impractical in cloud FaaS infrastructure, are actually feasible. Via several new techniches and steps demonstrated by the authors, they managed to successfully steal 81% of some secret cryptographic keys from a victim container within just 19 seconds.
+
+The technique used is Prime+Probe on the last-level cache (LLC), having the advantage of not requiring the attacker to share physical cores or memory pages with the victim. The specific attack steps are the following:
+Step 0. (Co-location): Co-locate the attacker program on the same physical host as the target victim program.
+Step 1. (Prepare LLC side channels): Construct numerous eviction sets, each corresponding to a potential target LLC set.
+Step 2. (Identify target LLC sets): Scan LLC sets to identify those that the victim accesses in a secret-dependent manner.
+Step 3. (Exfiltrate information): Monitor the target LLC sets and extract information.
+
+Executing these attacks in real cloud environments presents significant challenges. Modern clouds are noisy due to shared hardware, workloads are short-lived (limiting attack time windows), and technical constraints like containerized environments complicate the process. These challenges led cloud vendors like Amazon to dismiss LLC Prime+Probe attacks as impractical threats, but this research proves that assumption wrong. The authors demonstrate an end-to-end attack on Google Cloud's FaaS platform. The paper makes four key contributions: 
+1) Existing Prime+Probe approaches fail in the cloud.
+2) Effective construction of eviction sets in the cloud.
+3) Techniques for victim monitoring and target set identification.
+4) End-to-end attack in production.

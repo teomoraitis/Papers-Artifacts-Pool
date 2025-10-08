@@ -1,0 +1,6 @@
+Paper Summary by Theodoros Moraitis: 
+**Direct Memory Translation for Virtualized Clouds [ASPLOS'24]** (Virtualization)
+
+Direct Memory Translation (DMT) in virtualized environments is becoming increasingly popular, as address translation overhead is more and more expensive. To fight this problem DMT is proposed, which is a hardware-software extension that can minimize the page walk access time. The key idea of DMT is to manage direct mapping from each virtual page to its last-level PTE (Page Table Entry) in memory.
+
+DMT is fully compatible with x86 memory architecture and existing Page Table structures. It is designed to be scalable and practical, so it can be adopted in real-world OS and HW implementations. It results in an average 1.65x speedup of page table walks in a virtualized environment, and 1.24x speedups of application execution.

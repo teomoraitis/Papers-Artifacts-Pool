@@ -1,0 +1,6 @@
+Paper Summary by Theodoros Moraitis: 
+**Skyloft: A General High-Efficient Scheduling Framework in User Space [SOSP’24]** (Scheduling)
+
+Skyloft is a new scheduling framework that runs in user space. Traditional scheduling happens inside the kernel, which causes slowdowns because the system has to constantly switch between user mode and kernel mode. Cloud applications today need very fast response times (measured in microseconds), and kernel-based scheduling is too slow for these requirements. Skyloft uses a new hardware feature called User Interrupts (UINTR) that lets user programs handle timer interrupts directly, without going through the kernel. This allows Skyloft to interrupt and switch between tasks in just a few microseconds, which is much faster than Linux's normal schedulers that run on kernel mode.
+
+Skyloft is the first general user-space framework to support μs-scale preemptive scheduling for multiple applications. It also proposes a paradigm to develop various schedulers with a set of general operations. Based on Skyloft, scheduling policies – previously requiring significant modifications to specialized schedulers – can be implemented in just hundreds of lines of code. Finally, It achieves comparable or even better performance than existing works on both synthetic and real-world workloads for popular applications.

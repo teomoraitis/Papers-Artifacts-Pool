@@ -1,0 +1,9 @@
+Paper Summary by Theodoros Moraitis: 
+**Managing Memory Tiers with CXL in Virtualized Environments [OSDI'24]** (Memory pooling & Tiering)
+
+Cloud providers want to add more memory capacity in cloud infrastructure using CXL memory, which connects extra DRAM memory to the CPU through PCIe buses. CXL is essential because of a recent problem in cloud computing: as CPU cores keep increasing, we do not have enough local memory (DRAM) to match - there is not enough memory per CPU core. 
+However, CXL memory is about 2x slower than local DRAM, so we need smart ways to decide what data goes where (memory pooling & tiering).
+
+The traditional solution is software tiering - the operating system decides which memory pages go to fast local DRAM (for frequently used data) and which go to slower CXL memory (for less important data). But this has problems in cloud environments: it is expensive to track which pages are used most, it can only move whole pages (not smaller pieces, so not Huge Page friendly), and it uses too much CPU overhead. 
+
+Intel created a hardware tiering mechanism for CXL called "Flat Memory Mode" that automatically moves (or swappes) individual cache lines (much smaller than pages) between fast (local) and slow (CXL) memory based on recent usage. However, this hardware solution has still the problem of "High tail slowdown". So, the authors created "Memstrata" - the first software multi-tenant management system for hardware-managed CXL that ensures performance isolation and minimizes VM slowdowns. They also studied a wide range of workloads, and demonstrated that Intel Flat Memory Mode combined with Memstrata is very effective and has minimal performance loss compared to regular DRAM.

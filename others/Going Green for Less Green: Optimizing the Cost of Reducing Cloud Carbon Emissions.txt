@@ -1,0 +1,12 @@
+Paper Summary by Theodoros Moraitis: 
+**Going Green for Less Green: Optimizing the Cost of Reducing Cloud Carbon Emissions [ASPLOS'24]** (Resource management)
+
+The Problem: Reducing the carbon footprint of batch workloads in hybrid cloud settings.
+
+The Challenge: Carbon-aware scheduling conflicts with traditional performance and cost objectives.
+
+High-level Solution: Carbon-aware scheduling that considers the trade-offs between carbon, performance, and cost.
+
+Key-insights:
+- Carbon-aware computing is not free.
+- "Good" Trade-off points exist, and users should be able to navigate them.

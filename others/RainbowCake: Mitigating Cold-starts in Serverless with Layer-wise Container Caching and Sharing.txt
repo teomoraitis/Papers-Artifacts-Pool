@@ -1,0 +1,8 @@
+Paper Summary by Theodoros Moraitis: 
+**RainbowCake: Mitigating Cold-starts in Serverless with Layer-wise Container Caching and Sharing [ASPLOS'24]** (Serverless computing)
+
+RainbowCake is serverless computing technique designed to address the cold-start problem that affects serverless platforms. Cold-starts occur when containers need to be initialized from scratch, causing latency that impacts the performance of serverless functions, which typically execute in just seconds. While existing solutions, like full container caching, partial container caching, and container sharing, each have some advantages, they also suffer from significant drawbacks: full caching leads to memory waste, partial caching only partially mitigates cold-starts, and container sharing creates over-packed containers that waste a lot of memory.
+
+RainbowCake addresses these limitations by combining the best aspects of container caching and container sharing through a layer-wise approach. The system is designed in three layers and manages different container layers individually, with lower-level layers being lighter and more shareable while higher-level layers being heavier and more specialized.
+
+Compared to existing solutions, RainbowCake is tested to be more robust and tolerant to function invocation bursts on real clusters with realistic workloads. Experimental results showed that RainbowCake reduces 68% startup latency and 77% container memory waste compared to existing solutions.
