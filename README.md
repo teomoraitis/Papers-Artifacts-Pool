@@ -17,3 +17,37 @@ A collection of studied and reproduced research papers, including summaries, pre
 - [EXTMEM Artifact Reproduction.pdf](./EXTMEM/EXTMEM%20Artifact%20Reproduction.pdf) — Reproduction steps and artifact results.
 
 ---
+
+### Others:
+
+#### Architectural Support for Optimizing Huge Page Selection Within the OS
+- **Original Paper:** []()
+
+#### Coordinated and Efficient Huge Page Management with Ingens
+- **Original Paper:** []()
+
+#### Last-Level Cache Side-Channel Attacks Are Feasible in the Modern Public Cloud [ASPLOS'24] (Security)
+- **Original Paper:** []()
+- [Paper Summary](./others/)
+
+#### Managing Memory Tiers with CXL in Virtualized Environments [OSDI'24] (Memory pooling & Tiering)
+- **Original Paper:** []()
+- [Paper Summary](./others/)
+
+#### Skyloft: A General High-Efficient Scheduling Framework in User Space [SOSP’24] (Scheduling)
+- **Original Paper:** []()
+- [Paper Summary](./others/)
+
+#### Direct Memory Translation for Virtualized Clouds [ASPLOS'24] (Virtualization)
+- **Original Paper:** []()
+- [Paper Summary](./others/)
+
+#### Going Green for Less Green: Optimizing the Cost of Reducing Cloud Carbon Emissions [ASPLOS'24] (Resource management)
+- **Original Paper:** []()
+- [Paper Summary](./others/)
+
+#### RainbowCake: Mitigating Cold-starts in Serverless with Layer-wise Container Caching and Sharing [ASPLOS'24] (Serverless computing)
+- **Original Paper:** []()
+- [Paper Summary](./others/)
+
+---
