@@ -21,7 +21,7 @@ A collection of studied and reproduced research papers, including summaries, pre
 ### [Others](./others):
 
 #### Architectural Support for Optimizing Huge Page Selection Within the OS
-- Original Paper: [Promotion Candidate Cache for Huge Pages (MICRO 2023)](https://dl.acm.org/doi/pdf/10.1145/3613424.3614296)
+- Original Paper: [PCC for Huge Pages (MICRO 2023)](https://dl.acm.org/doi/pdf/10.1145/3613424.3614296)
 
 #### Coordinated and Efficient Huge Page Management with Ingens
 - Original Paper: [Ingens (USENIX OSDI 2016)](https://www.usenix.org/system/files/conference/osdi16/osdi16-kwon.pdf)
