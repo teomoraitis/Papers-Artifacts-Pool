@@ -2,10 +2,18 @@ Guides used:
 https://vatlidak-org.github.io/web/assets/md/setup_instructions/
 https://github.com/heechul/palloc
 
+___________________________________________________________________________________
+**CONFIG/BUILD/INSTALL/BOOT:**
+
 # Setting up a QEMU+KVM VM
 Already done:
 → given 2 Cores, 8GB of RAM​, 120GB of SSD.
 → Ubuntu 22.04 minimal install​.
+
+My Ubuntu VM has already these kernel available for boot:
+`/boot/vmlinuz-6.8.0-59-generic`	//original default
+`/boot/vmlinuz-6.8.0-60-generic`	//original default
+`/boot/vmlinuz-5.15.0+`           	//patched kernel 5.15 with EXTMEM (old)
 
 # Kernel Compilation & Installation:
 For PALLOC I will use the palloc-6.6.patch. So, firstly a kernel version 6.6 must be downloaded, compiled, installed, booted. After that, it will be patched with palloc.
@@ -130,4 +138,18 @@ Enable and verify this:
 
 Note: You do not need to re-configure the kernel every time you make a change. However you should re-compile any changed files and re-install the modified kernel using the commands above whenever you are ready to test your changes.
 
-Reboot the machine and once again select your custom -palloc kernel from the GRUB menu. The new kernel may show a -dirty suffix, which is normal.
+Reboot the machine and once again select your custom -palloc kernel from the GRUB menu. The new kernel may show a -dirty suffix, which is normal:
+`$ uname -r`
+6.6.0-palloc-dirty
+
+So, my Ubuntu VM now has these kernels available for boot:
+`/boot/vmlinuz-6.8.0-59-generic`	//original default
+`/boot/vmlinuz-6.8.0-60-generic`	//original default
+`/boot/vmlinuz-5.15.0+`           	//patched kernel 5.15 with EXTMEM (old)
+`/boot/vmlinuz-6.6.0-palloc`		//original kernel 6.6
+`/boot/vmlinuz-6.6.0-palloc-dirty`	//patched kernel 6.6 with PALLOC
+
+
+___________________________________________________________________________________
+**FUNCTION/EXPERIMENT/REPRODUCE/RESULTS:**
+
