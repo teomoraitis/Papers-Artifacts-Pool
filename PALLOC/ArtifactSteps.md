@@ -13,11 +13,11 @@ Already done: <br>
 → given 2 Cores, 8GB of RAM​, 120GB of SSD (60GB available for PALLOC, rest used by old EXTMEM). <br>
 → Ubuntu 22.04 minimal install​. <br>
 
-My Ubuntu VM has already these kernel available for boot:
+My Ubuntu VM has already these kernels available for boot:
 ```
 /boot/vmlinuz-6.8.0-59-generic   # original default
 /boot/vmlinuz-6.8.0-60-generic   # original default
-/boot/vmlinuz-5.15.0+           	# patched kernel 5.15 with EXTMEM (old)
+/boot/vmlinuz-5.15.0+            # patched kernel 5.15 with EXTMEM (old)
 ```
 
 # Kernel Compilation & Installation:
