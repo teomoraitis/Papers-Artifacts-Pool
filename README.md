@@ -6,7 +6,7 @@ A collection of studied and reproduced research papers, including summaries, pre
 ### [PALLOC](./PALLOC): RAM Bank-Aware Memory Allocator for Performance Isolation on Multicore Platforms
 - Original Paper: [PALLOC (RTAS 2014)](https://cs-people.bu.edu/rmancuso/files/papers/palloc-rtas2014.pdf)
 - Original Artifact: [heechul/palloc](https://github.com/heechul/palloc)
-- Artifact Reproduction: [ReproductionSteps.md](https://github.com/moraitisteo/Papers-Artifacts-Pool/blob/main/PALLOC/ArtifactSteps.md)
+- Artifact Reproduction: [ArtifactSteps.md](https://github.com/moraitisteo/Papers-Artifacts-Pool/blob/main/PALLOC/ArtifactSteps.md)
 
 ---
 
