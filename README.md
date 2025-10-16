@@ -21,7 +21,7 @@ A collection of studied and reproduced research papers, including summaries, pre
 ### [Others](./others):
 
 #### Page Placement Algorithms for Large Real-Indexed Caches
-- Original Paper: [coloring_original (TOCS92)](https://pages.cs.wisc.edu/~markhill/papers/tocs92_coloring_original.pdf)
+- Original Paper: [coloring_original (TOCS 1992)](https://pages.cs.wisc.edu/~markhill/papers/tocs92_coloring_original.pdf)
 
 #### Architectural Support for Optimizing Huge Page Selection Within the OS
 - Original Paper: [PCC for Huge Pages (MICRO 2023)](https://dl.acm.org/doi/pdf/10.1145/3613424.3614296)
