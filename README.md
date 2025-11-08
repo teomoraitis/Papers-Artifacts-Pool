@@ -21,7 +21,7 @@ A collection of studied and reproduced research papers, including summaries, pre
 ### [Others](./others):
 
 #### Reflections on Trusting Trust
-- Original Paper: [thompson_trust (Turing Award 1984)](https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf)
+- Original Paper: [Thompson's Reflections on Trust (Turing Award 1984)](https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf)
 
 #### Page Placement Algorithms for Large Real-Indexed Caches
 - Original Paper: [coloring_original (TOCS 1992)](https://pages.cs.wisc.edu/~markhill/papers/tocs92_coloring_original.pdf)
