@@ -1,4 +1,4 @@
-# Notes-Progress on Coloring support via PALLOC+patch usage
+# Notes-Progress on Coloring support via PALLOC
 Guides used: <br>
 https://github.com/heechul/palloc <br>
 https://vatlidak-org.github.io/web/assets/md/setup_instructions/ <br>
